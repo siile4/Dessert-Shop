@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <style>
+        .div{
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 10px;
+            border-radius: 0px;
+            margin-top: 10px;
+
+        }
+        @media screen and (max-width:1000px){
+            .div{
+               flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+  <div class="div">
+    <div class="box">
+    </div>
+    <div class="box ">
+    </div>
+    <div class="box">
+    </div>
+    <div class="box">
+    </div>
+  </div>
+
+</body>
+</html>
+    
