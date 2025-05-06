@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <style>
+        .div{
+          display: flex;
+          flex-direction: row ;
+          gap: 10px;
+          
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 10px;
+            border-radius: 0px;
+            margin-top: 10px;
+
+        }
+        @media screen and (max-width: 250px){
+            .div{
+               display:grid;
+               grid-template-columns: auto;
+            }
+        }
+         @media screen and (max-width: 500px){
+            .div{
+               display:grid;
+               grid-template-columns: auto auto;
+            }
+        }
+           @media screen and (max-width: 900px){
+            .div{
+               display:grid;
+               grid-template-columns: auto auto auto;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+  <div class="div">
+    <div class="box">
+    </div>
+    <div class="box ">
+    </div>
+    <div class="box">
+    </div>
+    <div class="box">
+    </div>
+    <div class="box">
+    </div>
+    <div class="box">
+    </div>
+  </div>
+
+</body>
+</html>
